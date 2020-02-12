@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+       body{
+            width: 100%;
+            height: 1000vh;
+           background: linear-gradient(to bottom right, #8e0cff 20%, #0cb0ff 70%)
+        }
+       #landing-header {
+           position: absolute;
+           z-index: 99;
+           width: 100%;
+           opacity: 1;
+           top: 0;
+           margin-top: 40px;
+
+       }
+       #landing-header .navbar-brand {
+           float: left;
+           display: block;
+           font-size: 20px;
+           padding-left: 100px;
+           color: #fff;
+           text-decoration: none;
+       }
+       .navbar-collapse-collapse{
+           text-align: right;
+       }
+        .navbar-right ul{
+            text-align: right;
+        }
+        .navbar-right li{
+            display: inline;
+        }
+        .navbar-right li a{
+            text-decoration: none;
+            color: #ffffff;
+            margin-right: 50px;
+        }
+         .navbar-box{
+            display: inline-block;
+             border: 1px solid #ffffff;
+        }
+        .split{
+            height: 100%;
+            width: 50%;
+            position: fixed;
+            z-index: 1;
+            overflow-x: hidden;
+            padding-top: 40px;
+        }
+        .left{
+            left: 0;
+            color: #ffffff;
+        }
+        .left h2{
+            font-weight: normal;
+        }
+        .left p{
+            font-weight: normal;
+        }
+
+        .right{
+            right: 0;
+        }
+        .centered{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            text-align: left;
+        }
+        .login-box{
+            width: 320px;
+            height: 300px;
+            background: #ffffff;
+            padding: 60px 30px;
+            border-radius:5px ;
+            text-align: center;
+            border: 2px solid #ffffff;
+            -webkit-box-shadow: 10px 10px 5px -4px rgba(0,0,0,0.75);
+            -moz-box-shadow:  10px 10px 5px -4px rgba(0,0,0,0.75);
+            box-shadow:  10px 10px 5px -4px rgba(0,0,0,0.75);
+        }
+       .login-box h2{
+           text-transform: capitalize;
+           color: #000000;
+           font-weight: normal;
+       }
+       .login-box input[type="text"],.login-box input[type="email"],.login-box input[type="password"]{
+           width: 60%;
+           margin-bottom: 20px;
+           border-radius: 30px;
+           background: transparent;
+           outline: none;
+           border: 2px solid #34b5ff;
+           font-size: 13px;
+           height: 40px;
+           text-align: justify;
+           transition: 0.27s;
+           font-weight: normal;
+       }
+       .login-box input[type="text"]:focus,.login-box input[type="email"]:focus
+       ,.login-box input[type="password"]:focus{
+           width: 80%;
+           border-color: #ffffff;
+       }
+       .login-box input[type="submit"]{
+           width: 40%;
+           border: none;
+           outline: none;
+           background: #1a5efd;
+           padding: 10px 0;
+           border-radius: 30px;
+           color: #ffffff;
+           font-weight: 500;
+           text-transform: capitalize;
+           cursor: pointer;
+           margin-bottom: 20px;
+       }
+    </style>
+</head>
+<body>
+        <header role="banner" id="landing-header">
+            <div class="container-fluid">
+                <nav class="navbar navbar-default">
+                    <div class="navbar-header">
+                        <a href="#" class="navbar-brand">Landing</a>
+                    </div>
+                        <div id="navbar" class="navbar-collapse-collapse">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li class="active"><a href="#"><span>Home</span></a></li>
+                                <li><a href="#"><span>Features</span></a></li>
+                                <li><a href="#"><span>Reviews</span></a></li>
+                                <li><a href="#"><span>Pricing</span></a></li>
+                                <li><a href="#"><span>FAQ</span></a></li>
+                                <li><a href="#" class="navbar-box">Get Started</a></li>
+                            </ul>
+                        </div>
+                </nav>
+            </div>
+        </header>
+            <div class="split left">
+                    <div class="centered">
+                        <h2>Fly makes you faster</h2>
+                        <p>New free template by uicookies.com.For more templates visit the Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <div class="split right">
+                    <div class="centered">
+                        <div class="login-box">
+                            <h2>Sing Up For Free</h2>
+                            <form action="#">
+                                <div>
+                                    <label>
+                                        <input type="text" name="fullname" placeholder="Full name">
+                                    </label>
+                                </div>
+                                <div>
+                                    <label>
+                                        <input type="email" name="email" placeholder="Email">
+                                    </label>
+                                </div>
+                                <div>
+                                    <label>
+                                        <input type="password" name="password" placeholder="Password">
+                                    </label>
+                                </div>
+                                    <input type="submit" value="Register">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+</body>
+</html>
